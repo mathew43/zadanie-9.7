@@ -8,3 +8,12 @@ var pickRock = document.getElementById('js-playerPick_rock'),
 pick.Rock.addEventListener('click', function() {playerPick('rock')});
 pick.Paper.addEventListener('click', function() {playerPick('paper')});
 pick.Scissors.addEventListener('click', function() {playerPick('scissors')});
+
+var gameState = 'notStarted',
+	player = {
+		name: '',
+		score: 0
+	},
+	computer = {
+		score: 0
+	};
