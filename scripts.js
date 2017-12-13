@@ -116,10 +116,10 @@ function setGamePoints() {
 }
 
 function gameOver(){
-	if(player.score || computer.score == 10){
+	if(player.score > 9 || computer.score > 9){
 		alert('koniec gry');
+		gameState = 'ended';
+		setGameElements();
 		
 	}
 }
-gameOver();
-setGameElements();
